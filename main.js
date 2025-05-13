@@ -330,8 +330,6 @@ function animate() {
 
     controls.object.position.y += -velocity.y * delta; // new behavior
 
-    console.log(moveUp, moveDown);
-
     // if (controls.object.position.y < 10) {
     //   velocity.y = 0;
     //   controls.object.position.y = 10;
