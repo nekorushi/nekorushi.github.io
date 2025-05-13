@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My first three.js app</title>
+    <style>
+      #blocker {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      #instructions {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="blocker">
+      <div id="instructions">
+        <p style="font-size: 36px">Click to play</p>
+        <p>
+          Move: WASD<br />
+          Up: E / LEFT MOUSE CLICK<br />
+          Down: Q / RIGHT MOUSE CLICK<br />
+          Sprint: SHIFT<br />
+          Look: MOUSE MOVE
+        </p>
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.176.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
